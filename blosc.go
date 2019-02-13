@@ -2,7 +2,7 @@
 package blosc
 
 /*
-#cgo CFLAGS: -O2 -msse2 -I${SRCDIR}/c-blosc/blosc/ -DHAVE_LZ4
+#cgo CFLAGS: -O2 -msse2 -I${SRCDIR}/c-blosc/blosc/ -I${SRCDIR}/c-blosc/internal-complibs/lz4-1.7.2/ -DHAVE_LZ4
 #cgo LDFLAGS: -lpthread
 
 #include "blosc_include.h"
