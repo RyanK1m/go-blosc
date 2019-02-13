@@ -4,6 +4,11 @@ package blosc
 /*
 #cgo CFLAGS: -O2 -msse2 -I${SRCDIR}/c-blosc/blosc/
 #cgo LDFLAGS: -lpthread
+#cgo BLOSC_LIB= $(wildcard ../blosc/*.c)
+#cgo LZ4_DIR = ../internal-complibs/lz4-1.7.5
+#cgo CFLAGS += -DHAVE_LZ4 -I$(LZ4_DIR)
+#cgo BLOSC_LIB += $(wildcard $(LZ4_DIR)/*.c)
+
 #include "blosc_include.h"
 */
 import "C"
