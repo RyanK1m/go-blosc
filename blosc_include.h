@@ -17,3 +17,6 @@
 #include "blosc.c"
 #include "blosclz.c"
 #include "shuffle.c"
+
+#include "lz4.h"
+#include "lz4hc.h"
